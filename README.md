@@ -9,9 +9,9 @@ In the task you have to implement six "GetIndexOfChar" methods that should retur
 
 The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOf" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
 
-It's allowed to use [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length) and [Array.IList.Item](https://docs.microsoft.com/en-us/dotnet/api/system.array.system-collections-ilist-item) properties only for solving the task. You are not allowed to use other static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) or any extension method from [System.Linq namespace](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
+Use the _for_, _while_ and _do..while_ statements to repeatedly execute a block of C# statements. Don't use static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) (IndexOf, LastIndexOf, Find, ForEach, etc.) or [LINQ functionality](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
-1. Analyze the implementation of the [GetLastIndexOf(uint[], uint) method](GettingArrayElementIndex/ForMethods.cs#L19)) in the _ForMethods.cs_ file. Implement [GetIndexOfChar(uint[], uint)](GettingArrayElementIndex/ForMethods.cs#L7) static method. See TODO #1.
+1. Analyze the implementation of the [GetLastIndexOf(uint[], uint) method](GettingArrayElementIndex/ForMethods.cs#L19) in the _ForMethods.cs_ file. Implement [GetIndexOfChar(uint[], uint)](GettingArrayElementIndex/ForMethods.cs#L7) static method. See TODO #1.
 1. Analyze the implementation of the [GetLastIndexOf(uint[], uint, int, int) method](GettingArrayElementIndex/ForMethods.cs#L37) in the _ForMethods.cs_ file. Implement [GetIndexOfChar(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L13) static method. See TODO #2.
 1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort) method](GettingArrayElementIndex/WhileMethods.cs#L19) in the _WhileMethods.cs_ file. Implement [GetIndexOfChar(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L7) static method. See TODO #3.
 1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort, int, int) method](GettingArrayElementIndex/WhileMethods.cs#L40) in the _WhileMethods.cs_ file. Implement [GetIndexOfChar(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L13) static method. See TODO #4.
@@ -31,7 +31,7 @@ If a compiler error or warning message is not clear, [review errors details](htt
 1. Rebuild the solution.
 1. Fix all compiler warnings and errors.
 1. Run all unit tests, make sure all unit tests completed successfully.
-1. Review all changes, make sure the only code files (.cs) in Bools project have changes. No changes in project files (.csproj) or in Bools.Tests project.
+1. Review all changes, make sure the only code files (.cs) in GettingArrayElementIndex project have changes. No changes in project files (.csproj) or in GettingArrayElementIndex.Tests project.
 1. Stage your changes, and create a commit.
 1. Push your changes to remote repository.
 
