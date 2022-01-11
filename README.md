@@ -1,28 +1,22 @@
 # Getting an Array Element Index
 
-A beginner level task for practicing loops, arrays and extension methods.
+Beginner level task for practicing loops, arrays and extension methods.
 
-In the task you have to implement six "GetIndexOfChar" methods that should return the zero-based index (position) of the first occurence of the specified character ("value" parameter) in the string that is passed as a "str" parameter.
-
-
-## Get the Project
-
-* [Fork the task project (repository)](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#creating-a-fork) in GitLab.
-* [Open a project from your remote repository](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo) or [get your local copy](https://docs.microsoft.com/en-us/azure/devops/repos/git/clone#clone-from-another-git-provider) with Visual Studio.
+In the task you have to implement six "GetIndexOfChar" methods that should return the zero-based index (position) of the first occurrence of the specified character ("value" parameter) in the string that is passed as a "str" parameter.
 
 
-## Complete the Task
+## Task Description
 
 The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOfChar" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
 
 It's allowed to use [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length) and [Array.IList.Item](https://docs.microsoft.com/en-us/dotnet/api/system.array.system-collections-ilist-item) properties only for solving the task. You are not allowed to use other static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) or any extension method from [System.Linq namespace](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
-1. Analyze the implementation of the "GetLastIndexOfChar(uint[], uint)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement "GetIndexOfChar(uint[], uint)" static method. See TODO #1.
-1. Analyze the implementation of the "GetLastIndexOfChar(uint[], uint, int, int)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs) file. Implement "GetIndexOfChar(uint[], uint, int, int)" static method. See TODO #2.
-1. Analyze the implementation of the "GetLastIndexOfChar(ushort[], ushort)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement "GetIndexOfChar(ushort[], ushort)" static method. See TODO #3.
-1. Analyze the implementation of the "GetLastIndexOfChar(ushort[], ushort, int, int)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs) file. Implement "GetIndexOfChar(ushort[], ushort, int, int)" static method. See TODO #4.
-1. Analyze the implementation of the "GetLastIndexOfChar(ulong[], ulong)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement "GetIndexOfChar(ulong[], ulong)" static method. See TODO #5.
-1. Analyze the implementation of the "GetLastIndexofChar(ulong[], ulong, int, int)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs) file. Implement "GetIndexOfChar(ulong[], ulong, int, int) static method. See TODO #6.
+1. Analyze the implementation of the "GetLastIndexOf(uint[], uint)" method in the [ForMethods.cs](GettingArrayElementIndex/ForMethods.cs#L19) file. Implement "GetIndexOfChar(uint[], uint)" static method. See TODO #1.
+1. Analyze the implementation of the "GetLastIndexOf(uint[], uint, int, int)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs#L37) file. Implement "GetIndexOfChar(uint[], uint, int, int)" static method. See TODO #2.
+1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs#L19) file. Implement "GetIndexOfChar(ushort[], ushort)" static method. See TODO #3.
+1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort, int, int)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs#L40) file. Implement "GetIndexOfChar(ushort[], ushort, int, int)" static method. See TODO #4.
+1. Analyze the implementation of the "GetLastIndexOf(ulong[], ulong)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs#L19) file. Implement "GetIndexOfChar(ulong[], ulong)" static method. See TODO #5.
+1. Analyze the implementation of the "GetLastIndexof(ulong[], ulong, int, int)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs#L44) file. Implement "GetIndexOfChar(ulong[], ulong, int, int) static method. See TODO #6.
 
 
 ## Fix Compiler Issues
@@ -32,17 +26,14 @@ Additional style and code checks are enabled for the projects in this solution t
 If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
 
-## Save Your Work
+## Task Checklist
 
-* [Rebuild your solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio) in Visual Studio.
-* Check out the [Error List window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/error-list-window) for compiler errors and warnings. If you have any of those issues, **fix issues** and rebuild the solution again.
-* [Run all unit tests with Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer) and make sure there are **no failed unit tests**. Fix your code to [make all your unit tests GREEN](https://stackoverflow.com/questions/276813/what-is-red-green-testing).
-* Review all your changes **before** saving your work.
-    * Open "Changes" view in [Team Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/reference/team-explorer-reference).
-    * Click with your right mouse button on a modified file.
-    * Click on "Compare with Unmodified" menu item to open a comparison window.
-* [Stage your changes](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#stage-your-changes) and [create a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#create-a-commit).
-* Share your changes by [pushing them to remote repository](https://docs.microsoft.com/en-us/azure/devops/repos/git/pushing).
+1. Rebuild the solution.
+1. Fix all compiler warnings and errors.
+1. Run all unit tests, make sure all unit tests completed successfully.
+1. Review all changes, make sure the only code files (.cs) in Bools project have changes. No changes in project files (.csproj) or in Bools.Tests project.
+1. Stage your changes, and create a commit.
+1. Push your changes to remote repository.
 
 
 ## See also

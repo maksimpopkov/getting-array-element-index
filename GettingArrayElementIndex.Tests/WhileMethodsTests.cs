@@ -2,8 +2,6 @@
 using NUnit.Framework;
 
 // ReSharper disable StringLiteralTypo
-#pragma warning disable CA1707
-
 namespace GettingArrayElementIndex.Tests
 {
     [TestFixture]
@@ -30,28 +28,28 @@ namespace GettingArrayElementIndex.Tests
         }
 
         [Test]
-        public void GetIndexOfStartIndexCount_NullArray_ThrowsException()
+        public void GetIndexOf_StartIndexCount_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ushort[]).GetIndexOf(0, 0, 0));
         }
 
         [Test]
-        public void GetIndexOfStartIndexCount_StartIndexLessZero_ThrowsException()
+        public void GetIndexOf_StartIndexCount_StartIndexLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetIndexOf(0, -1, 0));
         }
 
         [Test]
-        public void GetIndexOfStartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
+        public void GetIndexOf_StartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetIndexOf(0, 1, 0));
         }
 
         [Test]
-        public void GetIndexOfStartIndexCount_CountLessZero_ThrowsException()
+        public void GetIndexOf_StartIndexCount_CountLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetIndexOf(0, 0, -1));
@@ -108,28 +106,28 @@ namespace GettingArrayElementIndex.Tests
         }
 
         [Test]
-        public void GetLastIndexOfStartIndexCount_NullArray_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ushort[]).GetLastIndexOf(0, 0, 0));
         }
 
         [Test]
-        public void GetLastIndexOfStartIndexCount_StartIndexLessZero_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_StartIndexLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetLastIndexOf(0, -1, 0));
         }
 
         [Test]
-        public void GetLastIndexOfStartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetLastIndexOf(0, 1, 0));
         }
 
         [Test]
-        public void GetLastIndexOfStartIndexCount_CountLessZero_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_CountLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ushort>().GetLastIndexOf(0, 0, -1));
@@ -159,7 +157,7 @@ namespace GettingArrayElementIndex.Tests
         [TestCase(new ushort[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, (ushort)3, 4, 1, ExpectedResult = -1)]
         [TestCase(new ushort[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, (ushort)3, 9, 5, ExpectedResult = 10)]
         [TestCase(new ushort[] { 0, 1, 2, 3, 1, 2, 3 }, (ushort)4, 0, 7, ExpectedResult = -1)]
-        public int GetLastIndexOfStartIndexCount_NonEmptyArray_ReturnsPosition(ushort[] arrayToSearch, ushort value, int startIndex, int count)
+        public int GetLastIndexOf_StartIndexCount_NonEmptyArray_ReturnsPosition(ushort[] arrayToSearch, ushort value, int startIndex, int count)
         {
             // Act
             return arrayToSearch.GetLastIndexOf(value, startIndex, count);

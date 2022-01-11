@@ -2,15 +2,13 @@
 using NUnit.Framework;
 
 // ReSharper disable StringLiteralTypo
-#pragma warning disable CA1707
-
 namespace GettingArrayElementIndex.Tests
 {
     [TestFixture]
     public sealed class DoWhileMethodsTests
     {
         [Test]
-        public void GetIndexOfChar_NullArray_ThrowsException()
+        public void GetIndexOf_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ulong[]).GetIndexOf(0));
@@ -23,35 +21,35 @@ namespace GettingArrayElementIndex.Tests
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 3ul, ExpectedResult = 3)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 9ul, ExpectedResult = 9)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 4ul, ExpectedResult = -1)]
-        public int GetIndexOfChar_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value)
+        public int GetIndexOf_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value)
         {
             // Act
             return arrayToSearch.GetIndexOf(value);
         }
 
         [Test]
-        public void GetIndexOfCharStartIndexCount_NullArray_ThrowsException()
+        public void GetIndexOf_StartIndexCount_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ulong[]).GetIndexOf(0, 0, 0));
         }
 
         [Test]
-        public void GetIndexOfCharStartIndexCount_StartIndexLessZero_ThrowsException()
+        public void GetIndexOf_StartIndexCount_StartIndexLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetIndexOf(0, -1, 0));
         }
 
         [Test]
-        public void GetIndexOfCharStartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
+        public void GetIndexOf_StartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetIndexOf(0, 1, 0));
         }
 
         [Test]
-        public void GetIndexOfCharStartIndexCount_CountLessZero_ThrowsException()
+        public void GetIndexOf_StartIndexCount_CountLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetIndexOf(0, 0, -1));
@@ -81,14 +79,14 @@ namespace GettingArrayElementIndex.Tests
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, 3ul, 4, 1, ExpectedResult = -1)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, 3ul, 9, 5, ExpectedResult = 10)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 4ul, 0, 7, ExpectedResult = -1)]
-        public int GetIndexOfChar_NonEmptyArray_ReturnsPosition2(ulong[] arrayToSearch, ulong value, int startIndex, int count)
+        public int GetIndexOf_NonEmptyArray_ReturnsPosition2(ulong[] arrayToSearch, ulong value, int startIndex, int count)
         {
             // Act
             return arrayToSearch.GetIndexOf(value, startIndex, count);
         }
 
         [Test]
-        public void GetLastIndexOfChar_NullArray_ThrowsException()
+        public void GetLastIndexOf_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ulong[]).GetLastIndexOf(0));
@@ -101,35 +99,35 @@ namespace GettingArrayElementIndex.Tests
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 3ul, ExpectedResult = 6)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 9ul, ExpectedResult = 9)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 4ul, ExpectedResult = -1)]
-        public int GetLastIndexOfChar_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value)
+        public int GetLastIndexOf_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value)
         {
             // Act
             return arrayToSearch.GetLastIndexOf(value);
         }
 
         [Test]
-        public void GetLastIndexOfCharStartIndexCount_NullArray_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_NullArray_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentNullException>(() => (null as ulong[]).GetLastIndexOf(0, 0, 0));
         }
 
         [Test]
-        public void GetLastIndexOfCharStartIndexCount_StartIndexLessZero_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_StartIndexLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetLastIndexOf(0, -1, 0));
         }
 
         [Test]
-        public void GetLastIndexOfCharStartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_StartIndexGreaterArrayLength_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetLastIndexOf(0, 1, 0));
         }
 
         [Test]
-        public void GetLastIndexOfCharStartIndexCount_CountLessZero_ThrowsException()
+        public void GetLastIndexOf_StartIndexCount_CountLessZero_ThrowsException()
         {
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(() => Array.Empty<ulong>().GetLastIndexOf(0, 0, -1));
@@ -159,7 +157,7 @@ namespace GettingArrayElementIndex.Tests
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, 3ul, 4, 1, ExpectedResult = -1)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3 }, 3ul, 9, 5, ExpectedResult = 10)]
         [TestCase(new ulong[] { 0, 1, 2, 3, 1, 2, 3 }, 4ul, 0, 7, ExpectedResult = -1)]
-        public int GetLastIndexOfCharStartIndexCount_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value, int startIndex, int count)
+        public int GetLastIndexOf_StartIndexCount_NonEmptyArray_ReturnsPosition(ulong[] arrayToSearch, ulong value, int startIndex, int count)
         {
             // Act
             return arrayToSearch.GetLastIndexOf(value, startIndex, count);
