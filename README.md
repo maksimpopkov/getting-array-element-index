@@ -7,16 +7,16 @@ In the task you have to implement six "GetIndexOfChar" methods that should retur
 
 ## Task Description
 
-The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOfChar" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
+The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOf" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
 
 It's allowed to use [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length) and [Array.IList.Item](https://docs.microsoft.com/en-us/dotnet/api/system.array.system-collections-ilist-item) properties only for solving the task. You are not allowed to use other static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) or any extension method from [System.Linq namespace](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
 1. Analyze the implementation of the "GetLastIndexOf(uint[], uint)" method in the [ForMethods.cs](GettingArrayElementIndex/ForMethods.cs#L19) file. Implement "GetIndexOfChar(uint[], uint)" static method. See TODO #1.
-1. Analyze the implementation of the "GetLastIndexOf(uint[], uint, int, int)" method in the [ForMethods.cs](GettingCharIndex/ForMethods.cs#L37) file. Implement "GetIndexOfChar(uint[], uint, int, int)" static method. See TODO #2.
-1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs#L19) file. Implement "GetIndexOfChar(ushort[], ushort)" static method. See TODO #3.
-1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort, int, int)" method in the [WhileMethods.cs](GettingCharIndex/WhileMethods.cs#L40) file. Implement "GetIndexOfChar(ushort[], ushort, int, int)" static method. See TODO #4.
-1. Analyze the implementation of the "GetLastIndexOf(ulong[], ulong)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs#L19) file. Implement "GetIndexOfChar(ulong[], ulong)" static method. See TODO #5.
-1. Analyze the implementation of the "GetLastIndexof(ulong[], ulong, int, int)" method in the [DoWhileMethods.cs](GettingCharIndex/DoWhileMethods.cs#L44) file. Implement "GetIndexOfChar(ulong[], ulong, int, int) static method. See TODO #6.
+1. Analyze the implementation of the "GetLastIndexOf(uint[], uint, int, int)" method in the [ForMethods.cs](GettingArrayElementIndex/ForMethods.cs#L37) file. Implement "GetIndexOfChar(uint[], uint, int, int)" static method. See TODO #2.
+1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort)" method in the [WhileMethods.cs](GettingArrayElementIndex/WhileMethods.cs#L19) file. Implement "GetIndexOfChar(ushort[], ushort)" static method. See TODO #3.
+1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort, int, int)" method in the [WhileMethods.cs](GettingArrayElementIndex/WhileMethods.cs#L40) file. Implement "GetIndexOfChar(ushort[], ushort, int, int)" static method. See TODO #4.
+1. Analyze the implementation of the "GetLastIndexOf(ulong[], ulong)" method in the [DoWhileMethods.cs](GettingArrayElementIndex/DoWhileMethods.cs#L19) file. Implement "GetIndexOfChar(ulong[], ulong)" static method. See TODO #5.
+1. Analyze the implementation of the "GetLastIndexof(ulong[], ulong, int, int)" method in the [DoWhileMethods.cs](GettingArrayElementIndex/DoWhileMethods.cs#L44) file. Implement "GetIndexOfChar(ulong[], ulong, int, int) static method. See TODO #6.
 
 
 ## Fix Compiler Issues
