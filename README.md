@@ -11,12 +11,12 @@ The implementation details are described with TODO comments in code files. There
 
 It's allowed to use [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length) and [Array.IList.Item](https://docs.microsoft.com/en-us/dotnet/api/system.array.system-collections-ilist-item) properties only for solving the task. You are not allowed to use other static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) or any extension method from [System.Linq namespace](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
-1. Analyze the implementation of the "GetLastIndexOf(uint[], uint)" method in the [ForMethods.cs](GettingArrayElementIndex/ForMethods.cs#L19) file. Implement "GetIndexOfChar(uint[], uint)" static method. See TODO #1.
-1. Analyze the implementation of the "GetLastIndexOf(uint[], uint, int, int)" method in the [ForMethods.cs](GettingArrayElementIndex/ForMethods.cs#L37) file. Implement "GetIndexOfChar(uint[], uint, int, int)" static method. See TODO #2.
-1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort)" method in the [WhileMethods.cs](GettingArrayElementIndex/WhileMethods.cs#L19) file. Implement "GetIndexOfChar(ushort[], ushort)" static method. See TODO #3.
-1. Analyze the implementation of the "GetLastIndexOf(ushort[], ushort, int, int)" method in the [WhileMethods.cs](GettingArrayElementIndex/WhileMethods.cs#L40) file. Implement "GetIndexOfChar(ushort[], ushort, int, int)" static method. See TODO #4.
-1. Analyze the implementation of the "GetLastIndexOf(ulong[], ulong)" method in the [DoWhileMethods.cs](GettingArrayElementIndex/DoWhileMethods.cs#L19) file. Implement "GetIndexOfChar(ulong[], ulong)" static method. See TODO #5.
-1. Analyze the implementation of the "GetLastIndexof(ulong[], ulong, int, int)" method in the [DoWhileMethods.cs](GettingArrayElementIndex/DoWhileMethods.cs#L44) file. Implement "GetIndexOfChar(ulong[], ulong, int, int) static method. See TODO #6.
+1. Analyze the implementation of the [GetLastIndexOf(uint[], uint) method](GettingArrayElementIndex/ForMethods.cs#L19)) in the _ForMethods.cs_ file. Implement [GetIndexOfChar(uint[], uint)](GettingArrayElementIndex/ForMethods.cs#L7) static method. See TODO #1.
+1. Analyze the implementation of the [GetLastIndexOf(uint[], uint, int, int) method](GettingArrayElementIndex/ForMethods.cs#L37) in the _ForMethods.cs_ file. Implement [GetIndexOfChar(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L13) static method. See TODO #2.
+1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort) method](GettingArrayElementIndex/WhileMethods.cs#L19) in the _WhileMethods.cs_ file. Implement [GetIndexOfChar(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L7) static method. See TODO #3.
+1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort, int, int) method](GettingArrayElementIndex/WhileMethods.cs#L40) in the _WhileMethods.cs_ file. Implement [GetIndexOfChar(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L13) static method. See TODO #4.
+1. Analyze the implementation of the [GetLastIndexOf(ulong[], ulong) method](GettingArrayElementIndex/DoWhileMethods.cs#L19) in the _DoWhileMethods.cs_ file. Implement [GetIndexOfChar(ulong[], ulong)](GettingArrayElementIndex/DoWhileMethods.cs#L7) static method. See TODO #5.
+1. Analyze the implementation of the [GetLastIndexof(ulong[], ulong, int, int) method](GettingArrayElementIndex/DoWhileMethods.cs#L44) in the _DoWhileMethods.cs_ file. Implement [GetIndexOfChar(ulong[], ulong, int, int)](GettingArrayElementIndex/DoWhileMethods.cs#L13) static method. See TODO #6.
 
 
 ## Fix Compiler Issues
@@ -42,7 +42,6 @@ If a compiler error or warning message is not clear, [review errors details](htt
   * [for statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/for)
   * [while statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/while)
   * [do..while statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/do)
-  * [foreach..in statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in)
   * [Increment operator ++](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-)
   * [Decrement operator --](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---)
   * [Creating and Throwing Exceptions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/creating-and-throwing-exceptions)
