@@ -7,7 +7,7 @@ In the task you have to implement six "GetIndexOfChar" methods that should retur
 
 ## Task Description
 
-The implementation details are described with TODO comments in code files. There are fix "GetLastIndexOf" method that you can use as examples. Analyze these methods and run unit tests for them before starting implementing methods you have to implement.
+The implementation details are described in TODO comments in code files. There are six "GetLastIndexOf" methods that you can use as examples. Analyze these methods and run their respective unit tests BEFORE implementing required methods.
 
 Use the _for_, _while_ and _do..while_ statements to repeatedly execute a block of C# statements. Don't use static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) (IndexOf, LastIndexOf, Find, ForEach, etc.) or [LINQ functionality](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
